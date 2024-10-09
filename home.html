@@ -32,15 +32,15 @@
                     -->
 
                     <div>
-                        <button class="btn btn-lg">Add Money</button>
-                    <button class="btn btn-lg">Cash Out</button>
+                        <button id="add-button" class="btn btn-lg">Add Money</button>
+                    <button id="cash-button" class="btn btn-lg">Cash Out</button>
                     </div>
                     <div class="divider"></div>
                    <!-- user action button end here -->
                         
                    <!-- Add money form start here -->
 
-                     <div class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                     <div id="add-moeny-form" class=" card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
       <form class="card-body">
         <div class="form-control">
           <label class="label">
@@ -68,19 +68,19 @@
 
                    <!-- Cash out form start here -->
 
-              <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+              <div id="cash-out-form" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
       <form class="card-body">
         <div class="form-control">
           <label class="label">
             <span class="label-text">Cash Out</span>
           </label>
-          <input type="email" placeholder="Enter your amount" class="input input-bordered" required />
+          <input id="cash-out-money" type="text" placeholder="Enter your amount" class="input input-bordered" required />
         </div>
         <div class="form-control">
           <label class="label">
             <span class="label-text">4Digit Pin</span>
           </label>
-          <input type="password" placeholder="password" class="input input-bordered" required />
+          <input id="cash-out-pin" type="password" placeholder="password" class="input input-bordered" required />
         </div>
         <div class="form-control mt-6">
           <button id="cash-out-button" class="btn btn-primary">Cash Out</button>
@@ -97,5 +97,6 @@
 
     <script src="home.js"></script>
     <script src="cashout.js"></script>
+    <script src="featue.js"></script>
 </body>
 </html>
